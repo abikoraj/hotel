@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RoomCategoryController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,11 @@ Route::get('/', function () {
 
 Route::match(['get', 'post'], 'login', [UserController::class, 'login'])->name('login');
 Route::match(['get', 'post'], 'register', [UserController::class, 'register'])->name('register');
+
+
+Route::prefix('room-category')->name('roomCategory.')->group(function () {
+    Route::get('/', [RoomCategoryController::class, 'index'])->name('index');
+    Route::post('/submit', [RoomCategoryController::class, 'submit'])->name('submit');
+    Route::post('/update/{roomCategory}', [RoomCategoryController::class, 'update'])->name('update');
+    Route::get('/delete/{roomCategory}', [RoomCategoryController::class, 'delete'])->name('delete');
+});
