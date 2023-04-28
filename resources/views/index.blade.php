@@ -1,11 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid">
-
-
-
-
+    <div class="container-fluid">
         <div class="col-xl-12">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
@@ -25,9 +21,8 @@
 
                                     <div class="flex-shrink-0">
                                         <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#"
-                                                data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
+                                            <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
                                                 <i class="bx bx-dots-horizontal text-muted font-size-22"></i>
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-end">
@@ -41,7 +36,9 @@
                                 </div>
 
                                 <div>
-                                    <h4 class="mt-4 pt-1 mb-0 font-size-22">$34,123.20 <span class="text-success fw-medium font-size-13 align-middle"> <i class="mdi mdi-arrow-up"></i> 8.34% </span> </h4>
+                                    <h4 class="mt-4 pt-1 mb-0 font-size-22">$34,123.20 <span
+                                            class="text-success fw-medium font-size-13 align-middle"> <i
+                                                class="mdi mdi-arrow-up"></i> 8.34% </span> </h4>
                                     <div class="d-flex mt-1 align-items-end overflow-hidden">
                                         <div class="flex-grow-1">
                                             <p class="text-muted mb-0 text-truncate">Total Sales World Wide</p>
@@ -73,9 +70,8 @@
 
                                     <div class="flex-shrink-0">
                                         <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#"
-                                                data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
+                                            <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
                                                 <i class="bx bx-dots-horizontal text-muted font-size-22"></i>
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-end">
@@ -89,7 +85,9 @@
                                 </div>
 
                                 <div>
-                                    <h4 class="mt-4 pt-1 mb-0 font-size-22">63,234.20 <span class="text-danger fw-medium font-size-13 align-middle"> <i class="mdi mdi-arrow-down"></i> 3.68% </span> </h4>
+                                    <h4 class="mt-4 pt-1 mb-0 font-size-22">63,234.20 <span
+                                            class="text-danger fw-medium font-size-13 align-middle"> <i
+                                                class="mdi mdi-arrow-down"></i> 3.68% </span> </h4>
                                     <div class="d-flex mt-1 align-items-end overflow-hidden">
                                         <div class="flex-grow-1">
                                             <p class="text-muted mb-0 text-truncate">Total Orders World Wide</p>
@@ -121,9 +119,8 @@
 
                                     <div class="flex-shrink-0">
                                         <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#"
-                                                data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
+                                            <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
                                                 <i class="bx bx-dots-horizontal text-muted font-size-22"></i>
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-end">
@@ -137,7 +134,9 @@
                                 </div>
 
                                 <div>
-                                    <h4 class="mt-4 pt-1 mb-0 font-size-22">425,34.45 <span class="text-danger fw-medium font-size-13 align-middle"> <i class="mdi mdi-arrow-down"></i> 2.64% </span> </h4>
+                                    <h4 class="mt-4 pt-1 mb-0 font-size-22">425,34.45 <span
+                                            class="text-danger fw-medium font-size-13 align-middle"> <i
+                                                class="mdi mdi-arrow-down"></i> 2.64% </span> </h4>
                                     <div class="d-flex mt-1 align-items-end overflow-hidden">
                                         <div class="flex-grow-1">
                                             <p class="text-muted mb-0 text-truncate">Total Visitor World Wide</p>
@@ -169,9 +168,8 @@
 
                                     <div class="flex-shrink-0">
                                         <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#"
-                                                data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
+                                            <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
                                                 <i class="bx bx-dots-horizontal text-muted font-size-22"></i>
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-end">
@@ -186,7 +184,9 @@
                                 </div>
 
                                 <div>
-                                    <h4 class="mt-4 pt-1 mb-0 font-size-22">6,482.46 <span class="text-success fw-medium font-size-13 align-middle"> <i class="mdi mdi-arrow-down"></i> 5.79% </span> </h4>
+                                    <h4 class="mt-4 pt-1 mb-0 font-size-22">6,482.46 <span
+                                            class="text-success fw-medium font-size-13 align-middle"> <i
+                                                class="mdi mdi-arrow-down"></i> 5.79% </span> </h4>
                                     <div class="d-flex mt-1 align-items-end overflow-hidden">
                                         <div class="flex-grow-1">
                                             <p class="text-muted mb-0 text-truncate">Total Expense World Wide</p>
@@ -203,8 +203,8 @@
             </div>
         </div>
 
-     <!-- end row -->
+        <!-- end row -->
 
 
-</div>
+    </div>
 @endsection

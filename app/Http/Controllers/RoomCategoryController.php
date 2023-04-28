@@ -9,7 +9,7 @@ class RoomCategoryController extends Controller
 {
     public function index()
     {
-        return view('admin.FoodCategory.app');
+        return view('roomCategory');
     }
 
     public function submit(Request $request)
@@ -22,7 +22,7 @@ class RoomCategoryController extends Controller
         $foodCategory->name = $request->name;
         // dd($foodCategory);
         $foodCategory->save();
-        return back()->with('success', 'Food Category Added Successfully!');
+        return back()->with('success', 'Room Category Added Successfully!');
     }
 
     public function update(Request $request, RoomCategory $roomCategory)
@@ -34,12 +34,12 @@ class RoomCategoryController extends Controller
         $roomCategory->name = $request->name;
         // dd($roomCategory);
         $roomCategory->save();
-        return back()->with('success', 'Food Category Updated Successfully!');
+        return back()->with('success', 'Room Category Updated Successfully!');
     }
 
     public function delete(RoomCategory $roomCategory)
     {
         $roomCategory->delete();
-        return back()->with('success', 'Food Category Deleted Successfully!');
+        return back()->with('success', 'Room Category Deleted Successfully!');
     }
 }
