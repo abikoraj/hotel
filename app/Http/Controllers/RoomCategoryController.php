@@ -17,24 +17,11 @@ class RoomCategoryController extends Controller
         $request->validate([
             'name' => 'required'
         ]);
-        // return $request->all();
-        $foodCategory = new RoomCategory();
-        $foodCategory->name = $request->name;
-        // dd($foodCategory);
-        $foodCategory->save();
-        return back()->with('success', 'Room Category Added Successfully!');
-    }
 
-    public function update(Request $request, RoomCategory $roomCategory)
-    {
-        $request->validate([
-            'name' => 'required'
-        ]);
-        // return $request->all();
+        $roomCategory = new RoomCategory();
         $roomCategory->name = $request->name;
-        // dd($roomCategory);
         $roomCategory->save();
-        return back()->with('success', 'Room Category Updated Successfully!');
+        return back()->with('success', 'Room Category Added Successfully!');
     }
 
     public function delete(RoomCategory $roomCategory)

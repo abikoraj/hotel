@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RoomController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -21,3 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/user/register', [UserController::class, 'apiRegister']);
 Route::post('/user/login', [UserController::class, 'apiLogin']);
+
+Route::get('/room-list', [RoomController::class, 'apiList']);
+Route::get('/room/{id}', [RoomController::class, 'apiViewRoom']);
+
