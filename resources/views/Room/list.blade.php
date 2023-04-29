@@ -39,7 +39,15 @@
                                             <td>{{ $room->room_number }}</td>
                                             <td>{{ $room->description }}</td>
                                             <td>{{ $room->no_of_bed }}</td>
-                                            <td>{{ $room->status ? 'Available' : 'Not Available' }}</td>
+                                            <td>
+                                                @if ($room->status == 1)
+                                                    Available
+                                                @elseif ($room->status == 2)
+                                                    Booked
+                                                @elseif ($room->status == 3)
+                                                    Not Available
+                                                @endif
+                                            </td>
                                             <td>{{ $room->price }}</td>
                                             <td>
                                                 @if (!is_null($room->amenities))

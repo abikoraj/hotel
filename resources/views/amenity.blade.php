@@ -16,7 +16,6 @@
                 @endif
                 <div class="card">
                     <div class="card-header">{{ __('Add Amenities') }}</div>
-
                     <div class="card-body">
                         <form method="POST" action="{{ route('amenities.submit') }}">
                             @csrf
@@ -36,7 +35,7 @@
                     </div>
                 </div>
                 <div class="card mt-4">
-                    <div class="card-header">{{ __('Room Categories') }}</div>
+                    <div class="card-header">{{ __('Amenities') }}</div>
 
                     <div class="card-body">
                         <table class="table">

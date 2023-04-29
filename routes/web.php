@@ -3,6 +3,7 @@
 use App\Http\Controllers\AmenityController;
 use App\Http\Controllers\RoomCategoryController;
 use App\Http\Controllers\RoomController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -40,4 +41,9 @@ Route::prefix('room')->name('room.')->group(function () {
     Route::get('/create', [RoomController::class, 'create'])->name('create');
     Route::post('/submit', [RoomController::class, 'submit'])->name('submit');
     Route::get('/delete/{room}', [RoomController::class, 'delete'])->name('delete');
+});
+Route::prefix('service')->name('service.')->group(function () {
+    Route::get('/', [ServiceController::class, 'index'])->name('index');
+    Route::post('/submit', [ServiceController::class, 'submit'])->name('submit');
+    Route::get('/delete/{service}', [ServiceController::class, 'delete'])->name('delete');
 });
