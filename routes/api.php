@@ -28,6 +28,8 @@ Route::middleware(['auth:api'])->group(function () {
     Route::get('/service-list', [ServiceController::class, 'apiList']);
     Route::get('/service/{id}', [ServiceController::class, 'apiViewService']);
 
+    Route::get('/booking-list', [BookingController::class, 'apiList']);
+
     Route::post('/booking', [BookingController::class, 'apiBooking']);
 });
 Route::post('/user/register', [UserController::class, 'apiRegister']);

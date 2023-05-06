@@ -27,38 +27,42 @@
                 <li class="menu-title" data-key="t-menu">Dashboard</li>
 
                 <li>
-                    <a href="apps-calendar.html">
+                    <a href="{{ route('dashboard') }}">
                         <i class="bx bx-home-alt icon nav-icon"></i>
                         <span class="menu-item" data-key="t-calendar">Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="apps-calendar.html">
-                        <i class="bx bx-calendar-event icon nav-icon"></i>
-                        <span class="menu-item" data-key="t-calendar">Calendar</span>
+                    <a href="{{ route('roomCategory.index') }}">
+                        <i class="bx bxs-dashboard icon nav-icon"></i>
+                        <span class="menu-item" data-key="t-calendar">Room Category</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="apps-todo.html">
-                        <i class="bx bx-check-square icon nav-icon"></i>
-                        <span class="menu-item" data-key="t-todo">Todo</span>
-                        <span class="badge rounded-pill bg-success" data-key="t-new">New</span>
+                    <a href="{{ route('amenities.index') }}">
+                        <i class="bx bxs-dashboard icon nav-icon"></i>
+                        <span class="menu-item" data-key="t-todo">Amenities</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="apps-file-manager.html">
-                        <i class="bx bx-file-find icon nav-icon"></i>
-                        <span class="menu-item" data-key="t-filemanager">File Manager</span>
+                    <a href="{{ route('room.create') }}">
+                        <i class="bx bxs-dashboard nav-icon"></i>
+                        <span class="menu-item" data-key="t-filemanager">Create Room</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="apps-chat.html">
-                        <i class="bx bx-chat icon nav-icon"></i>
-                        <span class="menu-item" data-key="t-chat">Chat</span>
-                        <span class="badge rounded-pill bg-danger" data-key="t-hot">Hot</span>
+                    <a href="{{ route('room.list') }}">
+                        <i class="bx bxs-dashboard icon nav-icon"></i>
+                        <span class="menu-item" data-key="t-chat">List Rooms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('logout') }}">
+                        <i class="bx bx-power-off icon nav-icon"></i>
+                        <span class="menu-item" data-key="t-chat">Logout</span>
                     </a>
                 </li>
 

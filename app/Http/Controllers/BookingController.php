@@ -24,4 +24,10 @@ class BookingController extends Controller
 
         return response()->json($booking);
     }
+
+    public function apiList()
+    {
+        $bookings = Booking::all();
+        return response()->json($bookings);
+    }
 }
