@@ -41,7 +41,8 @@ class UserController extends Controller
         $user->save();
         $user->accessToken = $user->createToken('authToken')->accessToken;
         // dd($user->accessToken);
-        return response()->json($user->accessToken);
+        $data=$user->toArray();
+        return response()->json($data);
     }
 
     public function apiLogin(Request $request)
@@ -49,7 +50,7 @@ class UserController extends Controller
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             $user = Auth::user();
             $user->accessToken = $user->createToken('authToken')->accessToken;
-            return response()->json($user);
+            return response()->json($user->toArray());
         } else {
             return response("Wrong phone number or password.", 500);
         }

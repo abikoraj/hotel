@@ -18,17 +18,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
 
+
+Route::middleware(['auth:api'])->group(function () {
+
+    Route::get('/room-list', [RoomController::class, 'apiList']);
+    Route::get('/room/{id}', [RoomController::class, 'apiViewRoom']);
+
+    Route::get('/service-list', [ServiceController::class, 'apiList']);
+    Route::get('/service/{id}', [ServiceController::class, 'apiViewService']);
+
+    Route::post('/booking', [BookingController::class, 'apiBooking']);
+});
 Route::post('/user/register', [UserController::class, 'apiRegister']);
 Route::post('/user/login', [UserController::class, 'apiLogin']);
 
-Route::get('/room-list', [RoomController::class, 'apiList']);
-Route::get('/room/{id}', [RoomController::class, 'apiViewRoom']);
-
-Route::get('/service-list', [ServiceController::class, 'apiList']);
-Route::get('/service/{id}', [ServiceController::class, 'apiViewService']);
-
-Route::post('/booking', [BookingController::class, 'apiBooking']);

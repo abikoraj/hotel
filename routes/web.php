@@ -26,6 +26,7 @@ Route::match(['get', 'post'], 'login', [UserController::class, 'login'])->name('
 Route::match(['get', 'post'], 'register', [UserController::class, 'register'])->name('register');
 
 
+
 Route::prefix('room-category')->name('roomCategory.')->group(function () {
     Route::get('/', [RoomCategoryController::class, 'index'])->name('index');
     Route::post('/submit', [RoomCategoryController::class, 'submit'])->name('submit');
