@@ -40,7 +40,8 @@ class UserController extends Controller
         }
         $user->save();
         $user->accessToken = $user->createToken('authToken')->accessToken;
-        return response()->json($user);
+        // dd($user->accessToken);
+        return response()->json($user->accessToken);
     }
 
     public function apiLogin(Request $request)
