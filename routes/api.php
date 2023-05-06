@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\BuyServiceController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UserController;
@@ -28,10 +29,12 @@ Route::middleware(['auth:api'])->group(function () {
     Route::get('/service-list', [ServiceController::class, 'apiList']);
     Route::get('/service/{id}', [ServiceController::class, 'apiViewService']);
 
-    Route::get('/booking-list', [BookingController::class, 'apiList']);
 
     Route::post('/booking', [BookingController::class, 'apiBooking']);
+    Route::get('/booking-list', [BookingController::class, 'apiList']);
+    Route::post('/buy-service', [BuyServiceController::class, 'apiBuyService']);
 });
+
 Route::post('/user/register', [UserController::class, 'apiRegister']);
 Route::post('/user/login', [UserController::class, 'apiLogin']);
 
